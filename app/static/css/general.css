@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(9, 2, 39);
+}
+
+#header {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height: 10vmin;
+    display: grid;
+    grid-template: auto / auto 1fr;
+    align-items: center;
+}
+
+#header-signature-image {
+    width: auto;
+    height: 8vmin;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    padding-left: 20px;
+}
