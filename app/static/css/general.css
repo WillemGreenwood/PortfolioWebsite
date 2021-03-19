@@ -1,26 +1,58 @@
 body {
-    background-color: rgb(9, 2, 39);
+    background-color: #1e1c1f;
+    margin: 0;
 }
 
 #header {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    height: 10vmin;
-    display: grid;
-    grid-template: auto / auto 1fr;
-    align-items: center;
-}
-
-#header-signature-image {
-    width: auto;
-    height: 8vmin;
+    background-color: #323034;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
 }
 
 #navbar {
+    font-family: Tahoma, sans-serif;
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
 #navbar a {
-    padding-left: 20px;
+    color: #8e8e8e;
+    fill: #8e8e8e;
+    text-decoration: none;
+    line-height: calc(1em - 2px);
+    height: 1em;
+    padding: 0.8em;
+    border-bottom: solid 2px #007acc;
+}
+
+@keyframes navbar-hover {
+    100% {
+        color: #cccccc;
+        fill: #cccccc;
+        background-color: #474747;
+        border-bottom: solid 2px #33adff;
+    }
+}
+
+#navbar a:hover {
+    animation-name: navbar-hover;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+#github-octicon {
+    position: relative;
+    top: 0.1em;
+    width: 0.9em;
+    height: auto;
+}
+
+main {
+    color: white;
+    position: absolute;
+    top: 2.6em;
 }
