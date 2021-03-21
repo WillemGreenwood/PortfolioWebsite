@@ -1,5 +1,5 @@
 #starfield {
-    background-color: #371851;
+    background-color: #000428;
     background: linear-gradient(#000428, #000428 40%, #631e50);
     position: relative;
     width: 100vw;
@@ -7,13 +7,10 @@
     overflow: hidden;
 }
 
-#starfield div {
+.shining-star {
     position: absolute;
     border-radius: 50%;
     background-color: aliceblue;
-}
-
-.shining-star {
     width: 0.2vmin;
     height: 0.2vmin;
     animation-name: shining-star;
@@ -21,6 +18,9 @@
 }
 
 .shooting-star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: aliceblue;
     transform: translateX(100vmax);
     width: 40vmin;
     height: 0.1vmin;
@@ -37,21 +37,21 @@
 
 @keyframes shooting-star {
     0% {
-        transform: rotate(290deg) translateX(40vmin) scaleX(0.0001);
+        transform: rotate(290deg) translateX(100%) scale(0.001);
     }
     2.5% {
-        transform: rotate(290deg) translateX(20vmin) scaleX(0.0001);
+        transform: rotate(290deg) translateX(50%) scale(0.001);
     }
     5% {
-        transform: rotate(290deg) translateX(0) scaleX(1);
+        transform: rotate(290deg) translateX(0) scale(1);
     }
     7.5% {
-        transform: rotate(290deg) translateX(-20vmin) scaleX(0.0001);
+        transform: rotate(290deg) translateX(-50%) scale(0.001);
     }
     10% {
-        transform: rotate(290deg) translateX(-40vmin) scaleX(0.0001);
+        transform: rotate(290deg) translateX(-100%) scale(0.001);
     }
     100% {
-        transform: rotate(290deg) translateX(40vmin) scaleX(0.0001);
+        transform: rotate(290deg) translateX(100%) scale(0.001);
     }
 }

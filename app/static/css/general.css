@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-    background-color: #1e1c1f;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000428;
     margin: 0;
 }
 
+a {
+    color: #ff6c45;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9d2c4b;
+}
+
 #header {
-    background-color: #323034;
+    background-color: #1e1c1f;
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +28,7 @@ body {
 #navbar {
     font-family: Tahoma, sans-serif;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -26,15 +39,15 @@ body {
     line-height: calc(1em - 2px);
     height: 1em;
     padding: 0.8em;
-    border-bottom: solid 2px #007acc;
+    border-bottom: solid 2px #9d2c4b;
 }
 
 @keyframes navbar-hover {
     100% {
-        color: #cccccc;
-        fill: #cccccc;
-        background-color: #474747;
-        border-bottom: solid 2px #33adff;
+        color: whitesmoke;
+        fill: whitesmoke;
+        background-color: #3b122f;
+        border-bottom: solid 2px #ff6c45;
     }
 }
 
@@ -51,8 +64,12 @@ body {
     height: auto;
 }
 
-main {
-    color: white;
-    position: absolute;
-    top: 2.6em;
+#header-spacer {
+    height: 2.6em;
+}
+
+#footer {
+    background-color: #631e50;
+    background: linear-gradient(#631e50, #000428);
+    height: 100px;
 }
