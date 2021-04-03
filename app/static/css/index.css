@@ -2,6 +2,11 @@ main {
     background-color: #631e50;
 }
 
+hr {
+    border-color: whitesmoke;
+    margin: 1em 0 1em 0;
+}
+
 #page-title-div {
     position: relative;
     padding-top: 30vh;
@@ -23,32 +28,32 @@ main {
 }
 
 #introduction-section, #experience-section {
-    background-color: #000428;
-    padding: 10px 30px 12px 30px;
     margin: 30px;
 }
 
-#projects {
+#projects-section {
     display: grid;
-    grid-template: 1fr 1fr 1fr / repeat(auto-fill, auto);
+    grid-template: auto / 1fr 1fr 1fr;
     gap: 15px;
     margin: 30px;
 }
 
-#projects h1 {
-    background-color: #000428;
+#projects-section h1 {
     grid-column: 1 / 4;
-    padding: 30px;
     margin: 0;
 }
 
-.project-section {
+.project-article h2 {
+    font-size: 20px;
+}
+
+.black-box {
     background-color: #000428;
     padding: 30px;
 }
 
 #contact-section {
-    background-color: #000428;
-    padding: 10px 30px 12px 30px;
     margin: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-evenly;
 }
